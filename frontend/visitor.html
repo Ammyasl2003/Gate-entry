@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Entry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visitor Entry System</h1>
+            <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+        </header>
+        
+        <form id="visitorForm">
+            <div class="form-group">
+                <label for="visitorName">Full Name:</label>
+                <input type="text" id="visitorName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="visitorContact">Contact Number:</label>
+                <input type="tel" id="visitorContact" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="purpose">Purpose of Visit:</label>
+                <input type="text" id="purpose" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="meetingWith">Meeting With:</label>
+                <input type="text" id="meetingWith" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="entryType">Entry Type:</label>
+                <select id="entryType" required>
+                    <option value="">Select...</option>
+                    <option value="entry">Entry</option>
+                    <option value="exit">Exit</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+        <div id="responseMessage"></div>
+    </div>
+    
+    <script src="js/visitor.js"></script>
+</body>
+</html>

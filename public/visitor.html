@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Entry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            background-image: url('backimage.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visitor Entry System</h1>
+            <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+        </header>
+        
+        <form id="visitorForm">
+            <div class="form-group">
+                <label for="visitorName">Full Name:</label>
+                <input type="text" id="visitorName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="visitorContact">Contact Number:</label>
+                <input type="tel" id="visitorContact" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="purpose" class="required-field">Purpose of Visit</label>
+                <select id="purpose" name="purpose">
+                    <option value="" disabled selected>Select purpose</option>
+                    <option value="meeting">Meeting</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="interview">Interview</option>
+                    <option value="event">Event</option>
+                    <option value="other">Other</option>
+                </select>
+            <div class="form-group">
+                <label for="meetingWith">Meeting With:</label>
+                <input type="text" id="meetingWith" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="entryType">Gender:</label>
+                <select id="entryType" required>
+                    <option value="">Select...</option>
+                    <option value="entry">Female</option>
+                    <option value="exit">Male</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="entryTime">Time:</label>
+                <input type="text" id="entryTime" readonly>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+        <div id="responseMessage"></div>
+    </div>
+    
+    <script src="js/visitor.js"></script>
+</body> 
+</html>

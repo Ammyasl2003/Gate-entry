@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Entry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            background-image: url('backimage.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vehicle Entry System</h1>
+            <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+        </header>
+        
+        <form id="vehicleForm">
+            <div class="form-group">
+                <label for="vehicleNumber">Vehicle Number:</label>
+                <input type="text" id="vehicleNumber" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="vehicleType">Vehicle Type:</label>
+                <select id="vehicleType" required>
+                    <option value="">Select...</option>
+                    <option value="car">Car</option>
+                    <option value="bike">Bike</option>
+                    <option value="bus">Bus</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="driverName">Driver Name:</label>
+                <input type="text" id="driverName" required>
+            </div>
+              
+            <div class="form-group">
+                <label for="department">Gender:</label>
+                    <select id="department" required>
+                    <option value="">Select...</option>
+                    <option value="Gender">Female</option>
+                    <option value="Gender">Male</option>
+                </select>
+            </div>
+            
+            
+            
+            <div class="form-group">
+                <label for="entryTime">Time:</label>
+                <input type="text" id="entryTime" readonly>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+        <div id="responseMessage"></div>
+    </div>
+    
+    <script src="js/vehicle.js"></script>
+</body>
+</html>

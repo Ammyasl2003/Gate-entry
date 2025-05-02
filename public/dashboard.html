@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Management - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>Gate Management</h1>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="visitor-entry.html"><i class="fas fa-user-plus"></i> Visitor Entry</a></li>
+                    <li><a href="vehicle-entry.html"><i class="fas fa-car"></i> Vehicle Entry</a></li>
+                    <li><a href="entry-logs.html"><i class="fas fa-history"></i> Entry Logs</a></li>
+                    <li><a href="reports.html"><i class="fas fa-file-export"></i> Reports</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="header-right">
+                    <div class="user-profile">
+                        <span>Welcome, Admin</span>
+                        <img src="images/user-avatar.png" alt="User Avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>124</h3>
+                            <p>Today's Visitors</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-green">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>42</h3>
+                            <p>Today's Vehicles</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-orange">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>8</h3>
+                            <p>Visitors Inside</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-red">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>3</h3>
+                            <p>Vehicles Inside</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="recent-entries">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Recent Entries</h3>
+                                <a href="entry-logs.html" class="view-all">View All</a>
+                            </div>
+                            <div class="card-body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Time In</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>John Smith</td>
+                                            <td>Visitor</td>
+                                            <td>10:15 AM</td>
+                                            <td><span class="badge badge-success">Inside</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DL 4C AB 1234</td>
+                                            <td>Vehicle</td>
+                                            <td>09:30 AM</td>
+                                            <td><span class="badge badge-success">Inside</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sarah Johnson</td>
+                                            <td>Visitor</td>
+                                            <td>08:45 AM</td>
+                                            <td><span class="badge badge-secondary">Exited</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DL 8C XY 5678</td>
+                                            <td>Vehicle</td>
+                                            <td>08:15 AM</td>
+                                            <td><span class="badge badge-secondary">Exited</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Brown</td>
+                                            <td>Visitor</td>
+                                            <td>07:30 AM</td>
+                                            <td><span class="badge badge-secondary">Exited</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Quick Actions</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="action-buttons">
+                                    <a href="visitor-entry.html" class="action-btn bg-blue">
+                                        <i class="fas fa-user-plus"></i>
+                                        <span>New Visitor</span>
+                                    </a>
+                                    <a href="vehicle-entry.html" class="action-btn bg-green">
+                                        <i class="fas fa-car"></i>
+                                        <span>New Vehicle</span>
+                                    </a>
+                                    <a href="entry-logs.html" class="action-btn bg-orange">
+                                        <i class="fas fa-search"></i>
+                                        <span>Search Logs</span>
+                                    </a>
+                                    <a href="reports.html" class="action-btn bg-purple">
+                                        <i class="fas fa-file-export"></i>
+                                        <span>Generate Report</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Entry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            background-image: url('backimage.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Entry System</h1>
+            <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+        </header>
+        
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="studentId">Roll no:</label>
+                <input type="text" id="studentId" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Gender:</label>
+                    <select id="department" required>
+                    <option value="">Select...</option>
+                    <option value="Gender">Female</option>
+                    <option value="Gender">Male</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="entryTime">Time:</label>
+                <input type="text" id="entryTime" readonly>
+            </div>
+            
+            
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+        <div id="responseMessage"></div>
+    </div>
+    
+    <script src="js/student.js"></script>
+</body>
+</html>

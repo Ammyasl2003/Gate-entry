@@ -1,0 +1,2 @@
+Number: ch02k7990, Type: car, Driver: ammy, EntryType: entry, Time: 4/29/2025, 2:21:24 PM
+Number: ch02k7990, Type: car, Driver: ammy, EntryType: entry, Time: 4/29/2025, 10:16:31 PM

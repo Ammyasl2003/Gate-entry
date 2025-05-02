@@ -1,0 +1,5 @@
+ID: 101, Name: Amandeep, Department: MCA, Type: entry, Time: 4/29/2025, 1:38:38 PM
+ID: 101, Name: amandeep, Dept: MCA, Type: entry, Time: 4/29/2025, 2:19:28 PM
+ID: 2422, Name: Amandeep, Dept: MCA, Type: entry, Time: 4/29/2025, 10:02:20 PM
+ID: 101, Name: Amandeep, Dept: MCA, Type: entry, Time: 4/29/2025, 10:09:32 PM
+ID: 101, Name: ammy, Dept: MCA, Type: entry, Time: 4/29/2025, 10:12:50 PM
